@@ -1,5 +1,18 @@
 \ProvidesPackage{AcademicBook}
 
+\usepackage{etoc}
+
+\usepackage{siunitx}
+
+% for sub figures
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{makecell}
+
 \usepackage{upgreek}
 \usepackage{tikz}
 
@@ -36,14 +49,14 @@
 %% General
 \usepackage{hyperref}
 \hypersetup{
-	colorlinks		=	true,
-	bookmarks		=	true,
-	bookmarksopen	=	true,
+    colorlinks      =   true,
+    bookmarks       =   true,
+    bookmarksopen   =   true,
     % bookmarksdepth  =   2,
-	pdfstartview	=	Fit,
-	pdftitle		=	{Academic Book},
-	pdfauthor		=	{Jiaxin Zhong},
-	citecolor = red,
+    pdfstartview    =   Fit,
+    pdftitle        =   {Academic Book},
+    pdfauthor       =   {Jiaxin Zhong},
+    citecolor = red,
 }
 
 \usepackage{outlines}
@@ -54,7 +67,7 @@
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 \hypersetup{
-	bookmarksopenlevel = 3
+    bookmarksopenlevel = 3
 }
 \titleformat{\paragraph}
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
@@ -79,12 +92,12 @@
 % set the geometric info for the document
 \usepackage{geometry}
 \geometry{
-	paper = a4paper, % Change to letterpaper for US letter
-	inner = 2.54cm, % Inner margin
-	outer = 2.54cm, % Outer margin
-	bindingoffset = 0cm, % Binding offset
-	top = 2.54cm, % Top margin
-	bottom = 2.54cm, % Bottom margin
+    paper = a4paper, % Change to letterpaper for US letter
+    inner = 2.54cm, % Inner margin
+    outer = 2.54cm, % Outer margin
+    bindingoffset = 0cm, % Binding offset
+    top = 2.54cm, % Top margin
+    bottom = 2.54cm, % Bottom margin
 }
 
 
@@ -104,22 +117,22 @@
     colback = red!5,
     colframe=red!35!black}
 \newtcbtheorem[number within=section]{formulabox}{Formula}% 
-	{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+    {colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
 \newtcbtheorem[number within=section]{definitionbox}{Definition}%
-	{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+    {colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
 \newtcbtheorem[number within=section]{issuebox}{Issue}%
-	{colback=yellow!5,colframe=yellow!50!black,fonttitle=\bfseries}{th}
+    {colback=yellow!5,colframe=yellow!50!black,fonttitle=\bfseries}{th}
 \newtcbtheorem[number within=section]{theorembox}{Theorem}%
-	{colback=red!5,colframe=red!50,fonttitle=\bfseries}{th}
+    {colback=red!5,colframe=red!50,fonttitle=\bfseries}{th}
 \newtcbtheorem[number within=section]{examplebox}{Example}%
-	{colback=green!5,colframe=green!50!black,fonttitle=\bfseries}{th}
+    {colback=green!5,colframe=green!50!black,fonttitle=\bfseries}{th}
 \newtcbtheorem[number within=section]{propertybox}{Property}%
-	{colback=green!10,colframe=green!30!black,fonttitle=\bfseries}{th}
+    {colback=green!10,colframe=green!30!black,fonttitle=\bfseries}{th}
 \newtcbtheorem[number within=section]{lawbox}{Law}%
-	{colback=blue!20,colframe=green!35!black,fonttitle=\bfseries}{th}
+    {colback=blue!20,colframe=green!35!black,fonttitle=\bfseries}{th}
 
 \tcbset{FORMULA1/.style={colback=yellow!10!white,colframe=red!50!black,
-	every box/.style={highlight math style={colback=LightBlue!50!white,colframe=Navy}} }}
+    every box/.style={highlight math style={colback=LightBlue!50!white,colframe=Navy}} }}
 % end of============use the color box============
 
 % equation environments
