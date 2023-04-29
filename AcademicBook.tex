@@ -1,0 +1,44 @@
+\documentclass{book}
+
+\usepackage{AcademicBook}
+
+% use biblatex to manage references
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+
+\author{Jiaxin Zhong}
+\title{Academic Book Template}
+\date{\today}
+
+\begin{document}
+\addcontentsline{toc}{part}{Front Matter}
+
+\maketitle
+\addcontentsline{toc}{chapter}{Cover}
+
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{Table of Contents}
+
+\part{I}
+\chapter{References}
+References: \parencite{Wen1988DiffractionBeamField}.
+
+\part{II}
+
+\chapter{Lipsum A}
+
+\lipsum[1-6]
+
+\chapter{Lipsum B}
+
+\lipsum[3-5]
+ 
+
+
+
+\printbibliography
+\addcontentsline{toc}{part}{Back Matter}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\end{document}
